@@ -1,66 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bấm vô mất acc nha</title>
+<title>Link bài báo</title>
 <meta charset="UTF-8">
 </head>
 <body>
-<script>
-
-  function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
-    console.log('statusChangeCallback');
-    console.log(response);                   // The current login status of the person.
-    if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-      testAPI();  
-    } else {                                 // Not logged into your webpage or we are unable to tell.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this webpage.';
-    }
-  }
-
-
-  function checkLoginState() {               // Called when a person is finished with the Login Button.
-    FB.getLoginStatus(function(response) {   // See the onlogin handler
-      statusChangeCallback(response);
-    });
-  }
-
-
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1582624532081125',
-      cookie     : true,                     // Enable cookies to allow the server to access the session.
-      xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : 'v12.0'           // Use this Graph API version for this call.
-    });
-
-
-    FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
-      statusChangeCallback(response);        // Returns the login status.
-    });
-  };
- 
-  function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
-    });
-  }
-
-</script>
-
-
-<!-- The JS SDK Login Button -->
-
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-</div>
-
-<!-- Load the JS SDK asynchronously -->
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <br>Bài 1:
+  <br>Bài 2: 
+    https://rosap.ntl.bts.gov/view/dot/29303
+  <br>Bài 3:
+  <br>Bài 4:
+  <br>Bài 5:
+  <br>Bài 6: 
+    https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
+  <br>Bài 7: 
+    https://proceedings.neurips.cc/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf
+  <br>Bài 8:
+  <br>Bài 9:
+    https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf
+  <br>Bài 10:
+    http://proceedings.mlr.press/v38/lee15a.pdf
+  <br>Bài 11:
+  <br>Bài 12:
+  <br>Bài 13:
+    https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/research/reports/fdot-bdv31-977-81-sum.pdf
+  <br>Bài 14:
+    https://rosap.ntl.bts.gov/view/dot/35708
+  <br>Bài 15:
+    https://rosap.ntl.bts.gov/view/dot/50558
+  <br>Bài 16:
+  <br>Bài 17:
+  <br>Bài 18:
+  <br>Bài 19:
+  <br>Bài 20:
+    https://arxiv.org/pdf/1804.02767.pdf
+  <br>Bài 21:
+    https://openaccess.thecvf.com/content_cvpr_2016/papers/Liu_Deep_Relative_Distance_CVPR_2016_paper.pdf
+  <br>Bài 22:
+    https://openaccess.thecvf.com/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf
+  <br>Bài 23:
+    https://link.springer.com/content/pdf/10.1007/s11263-019-01247-4.pdf
+  <br>Bài 24:
+    https://proceedings.neurips.cc/paper/2011/file/beda24c1e1b46055dff2c39c98fd6fc1-Paper.pdf
+  <br>Bài 25:
+    https://openaccess.thecvf.com/content_iccv_2015/papers/Xie_Holistically-Nested_Edge_Detection_ICCV_2015_paper.pdf
+  <br>Bài 26:
+    https://openaccess.thecvf.com/content_cvpr_2015/papers/Long_Fully_Convolutional_Networks_2015_CVPR_paper.pdf
+  <br>Bài 27:
+  <br>Bài 28:
+  <br>Bài 29:
 </body>
 </html>
